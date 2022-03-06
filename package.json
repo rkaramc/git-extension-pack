@@ -13,7 +13,11 @@
 		"vscode": "^1.26.0"
 	},
 	"keywords": [
-		"git", "gitblame", "blame", "project", "folder"
+		"git",
+		"gitblame",
+		"blame",
+		"project",
+		"folder"
 	],
 	"categories": [
 		"Extension Packs"
@@ -31,5 +35,9 @@
 		"eamodio.gitlens",
 		"codezombiech.gitignore",
 		"ziyasal.vscode-open-in-github"
-	]
+	],
+	"scripts": {
+		"package": "vsce package",
+		"install-to-code": "code --install-extension %NPM_PACKAGE_NAME%-%NPM_PACKAGE_VERSION%.vsix"
+	}
 }
